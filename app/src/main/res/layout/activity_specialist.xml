@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecialistActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/specialist_pic"/>
+        <TextView android:id="@+id/login_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center" android:textSize="20dp"
+            android:text="specialist_login" android:textColor="@color/purple" android:textStyle="bold"/>
+        <TextView android:id="@+id/info_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center" android:textSize="20dp"
+            android:text="Username, age" android:textColor="@color/purple" android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/siren_border"
+            android:padding="15dp">
+            <TextView android:id="@+id/grad_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" android:textStyle="bold" android:textColor="@color/white"
+                android:text="Образование: "/>
+            <TextView android:id="@+id/grad2_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" android:textStyle="bold" android:textColor="@color/white"
+                android:text="Дополнительное образование: "/>
+            <TextView android:id="@+id/ispoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp" android:textStyle="bold" android:textColor="@color/white"
+                android:text="Специалист работает со следующими темами:"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/point_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/timeline_view" android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp" android:textStyle="bold" android:textColor="@color/purple"/>
+        <TextView android:id="@+id/price_view" android:layout_marginHorizontal="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp" android:textStyle="bold" android:textColor="@color/purple"/>
+
+        <Button android:id="@+id/block_btn" android:onClick="BlockOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/siren"
+            android:text="Заблокировать" android:fontFamily="casual" android:textSize="17dp"/>
+    </LinearLayout>
+</ScrollView>

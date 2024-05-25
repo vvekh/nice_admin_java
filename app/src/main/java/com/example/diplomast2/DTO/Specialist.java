@@ -1,0 +1,23 @@
+package com.example.diplomast2.DTO;
+
+import java.io.Serializable;
+
+public class Specialist implements Serializable {
+    public int id;
+    public String username;
+    public String usersurname;
+    public String birthdate;
+    public String login;
+    public String password;
+    public int sexid;
+    public int graduationid;
+    public String graduatuon2;
+    public int timelineid;
+    public String price;
+    public String status;
+    public String email;
+    public String phone;
+    public String pdf1;
+    public String pdf2;
+    public String pdf3;
+}
